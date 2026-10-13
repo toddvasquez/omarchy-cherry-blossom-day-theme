@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cherry Blossom Day</title>
+<style>
+  @font-face {
+    font-family: "Sakura JP";
+    src: url("__SAKURA_JP__") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #D0C6BC; }
+  .banner {
+    width: 1600px;
+    height: 680px;
+    display: grid;
+    grid-template-columns: 760px 840px;
+    grid-template-rows: 1fr 92px;
+    background: #E9E2DA;
+    color: #6E2438;
+    position: relative;
+    overflow: hidden;
+    font-family: "Noto Sans", "Liberation Sans", sans-serif;
+  }
+  .rule {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #D091A0 0%, #6A8EAA 52%, #FAF6F3 100%);
+    z-index: 3;
+  }
+  .copy {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 64px 28px 12px 72px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+  .eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.46em;
+    color: #9A8078;
+  }
+  h1 {
+    margin-top: 22px;
+    font-family: "Noto Serif", "Liberation Serif", serif;
+    font-weight: 560;
+    font-size: 72px;
+    line-height: 0.92;
+    letter-spacing: 0.02em;
+    color: #6E2438;
+  }
+  .kana {
+    margin-top: 16px;
+    font-family: "Sakura JP", "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.42em;
+    color: #D091A0;
+  }
+  .dek {
+    margin-top: 18px;
+    max-width: 540px;
+    font-family: "Noto Serif", "Liberation Serif", serif;
+    font-size: 22px;
+    line-height: 1.38;
+    color: #8A3A4E;
+  }
+  .chips {
+    margin-top: auto;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .chip {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .chip i {
+    display: block;
+    width: 46px;
+    height: 18px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px rgba(110, 36, 56, 0.14);
+  }
+  .chip b {
+    display: block;
+    font-size: 14px;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    color: #6E2438;
+  }
+  .chip span {
+    display: block;
+    margin-top: 1px;
+    font-family: "Liberation Mono", "Noto Sans Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: #9A8078;
+  }
+  .photo {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-image: url("../../backgrounds/1-hanami-path.jpg");
+    background-size: cover;
+    background-position: 58% 42%;
+    position: relative;
+  }
+  .photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+      #E9E2DA 0%,
+      rgba(233, 226, 218, 0.78) 10%,
+      rgba(233, 226, 218, 0.12) 36%,
+      rgba(233, 226, 218, 0) 56%);
+  }
+  .bar {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 8px;
+    padding: 14px 28px 26px 72px;
+    z-index: 2;
+  }
+  .swatch {
+    height: 42px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px rgba(110, 36, 56, 0.12);
+  }
+  .blossom {
+    position: absolute;
+    top: 36px;
+    right: 36px;
+    width: 28px;
+    height: 28px;
+    z-index: 4;
+    opacity: 0.92;
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="rule"></div>
+    <svg class="blossom" viewBox="0 0 64 64" aria-hidden="true">
+      <g fill="#D091A0">
+        <circle cx="32" cy="18" r="10"/>
+        <circle cx="46" cy="26" r="10"/>
+        <circle cx="42" cy="42" r="10"/>
+        <circle cx="22" cy="42" r="10"/>
+        <circle cx="18" cy="26" r="10"/>
+        <circle cx="32" cy="32" r="6" fill="#FAF6F3"/>
+      </g>
+    </svg>
+    <div class="copy">
+      <p class="eyebrow">OMARCHY THEME</p>
+      <h1>CHERRY<br>BLOSSOM DAY</h1>
+      <p class="kana">桜の日</p>
+      <p class="dek">A light hanami picnic. Pink petals, dusty stone, snow-white focus.</p>
+      <div class="chips">
+        <div class="chip"><i style="background:#D091A0"></i><div><b>faded pink</b><span>#D091A0 · accent</span></div></div>
+        <div class="chip"><i style="background:#6E2438"></i><div><b>blossom heart</b><span>#6E2438 · body text</span></div></div>
+        <div class="chip"><i style="background:#FAF6F3"></i><div><b>snow</b><span>#FAF6F3 · cursor and border</span></div></div>
+      </div>
+    </div>
+    <div class="photo"></div>
+    <div class="bar">
+      <div class="swatch" style="background:#E9E2DA"></div>
+      <div class="swatch" style="background:#D091A0"></div>
+      <div class="swatch" style="background:#6E2438"></div>
+      <div class="swatch" style="background:#6A8EAA"></div>
+      <div class="swatch" style="background:#FAF6F3"></div>
+      <div class="swatch" style="background:#5A7A52"></div>
+      <div class="swatch" style="background:#C4A04A"></div>
+      <div class="swatch" style="background:#C47A52"></div>
+    </div>
+  </div>
+</body>
+</html>

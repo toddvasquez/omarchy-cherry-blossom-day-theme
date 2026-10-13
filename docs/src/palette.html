@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cherry Blossom Day palette</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #E9E2DA; }
+  .sheet {
+    width: 1280px;
+    background: #E9E2DA;
+    color: #6E2438;
+    padding: 48px 48px 40px;
+    font-family: "Noto Sans", "Liberation Sans", sans-serif;
+  }
+  header { margin-bottom: 28px; }
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.42em;
+    color: #9A8078;
+  }
+  h1 {
+    margin-top: 10px;
+    font-family: "Noto Serif", "Liberation Serif", serif;
+    font-size: 48px;
+    font-weight: 560;
+    letter-spacing: 0.06em;
+    color: #6E2438;
+  }
+  .lede {
+    margin-top: 10px;
+    max-width: 780px;
+    font-family: "Noto Serif", "Liberation Serif", serif;
+    font-size: 18px;
+    line-height: 1.45;
+    color: #8A3A4E;
+  }
+  section { margin-top: 26px; }
+  h2 {
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #D091A0;
+  }
+  .grid { display: grid; gap: 14px 12px; }
+  .card { min-width: 0; }
+  .key {
+    font-family: "Liberation Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: #8A3A4E;
+    white-space: nowrap;
+  }
+  .chip {
+    margin-top: 6px;
+    height: 48px;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(110, 36, 56, 0.12);
+  }
+  .hex {
+    margin-top: 6px;
+    font-family: "Liberation Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: #6E2438;
+  }
+  .role {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #9A8078;
+  }
+  .ansi .chip { height: 36px; }
+  footer {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid #DDD4CB;
+    font-family: "Liberation Mono", monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #9A8078;
+  }
+  footer b { color: #D091A0; font-weight: 500; }
+  .end {
+    margin-top: 22px;
+    height: 4px;
+    background: linear-gradient(90deg, #D091A0, #6A8EAA, #FAF6F3);
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <header>
+      <p class="eyebrow">COLORS.TOML</p>
+      <h1>Palette</h1>
+      <p class="lede">Ground is dusty stone. Accent is faded pink. Body text is blossom heart. Focus jewelry is snow. Pink lives in the jewelry, never the floor.</p>
+    </header>
+    <section><h2>Surfaces</h2><div class="grid" style="grid-template-columns:repeat(5, 1fr)"><article class="card"><p class="key">darker_background</p><div class="chip" style="background:#D0C6BC"></div><p class="hex">#D0C6BC</p><p class="role">dusty stone</p></article>
+<article class="card"><p class="key">dark_background</p><div class="chip" style="background:#DDD4CB"></div><p class="hex">#DDD4CB</p><p class="role">soft stone</p></article>
+<article class="card"><p class="key">background</p><div class="chip" style="background:#E9E2DA"></div><p class="hex">#E9E2DA</p><p class="role">stone</p></article>
+<article class="card"><p class="key">lighter_background</p><div class="chip" style="background:#F3EDE7"></div><p class="hex">#F3EDE7</p><p class="role">pale paper</p></article>
+<article class="card"><p class="key">selection</p><div class="chip" style="background:#E8D0D6"></div><p class="hex">#E8D0D6</p><p class="role">petal wash</p></article></div></section>
+<section><h2>Text</h2><div class="grid" style="grid-template-columns:repeat(4, 1fr)"><article class="card"><p class="key">dark_foreground</p><div class="chip" style="background:#8A5A62"></div><p class="hex">#8A5A62</p><p class="role">bark</p></article>
+<article class="card"><p class="key">foreground</p><div class="chip" style="background:#6E2438"></div><p class="hex">#6E2438</p><p class="role">blossom heart</p></article>
+<article class="card"><p class="key">light_foreground</p><div class="chip" style="background:#8A3A4E"></div><p class="hex">#8A3A4E</p><p class="role">rose</p></article>
+<article class="card"><p class="key">bright_foreground</p><div class="chip" style="background:#4A1826"></div><p class="hex">#4A1826</p><p class="role">deep heart</p></article></div></section>
+<section><h2>Jewelry</h2><div class="grid" style="grid-template-columns:repeat(4, 1fr)"><article class="card"><p class="key">accent</p><div class="chip" style="background:#D091A0"></div><p class="hex">#D091A0</p><p class="role">faded pink</p></article>
+<article class="card"><p class="key">cursor</p><div class="chip" style="background:#FAF6F3"></div><p class="hex">#FAF6F3</p><p class="role">snow</p></article>
+<article class="card"><p class="key">blue</p><div class="chip" style="background:#6A8EAA"></div><p class="hex">#6A8EAA</p><p class="role">sky</p></article>
+<article class="card"><p class="key">cyan</p><div class="chip" style="background:#7A9AA8"></div><p class="hex">#7A9AA8</p><p class="role">mist</p></article></div></section>
+<section><h2>Warm scale</h2><div class="grid" style="grid-template-columns:repeat(6, 1fr)"><article class="card"><p class="key">red</p><div class="chip" style="background:#B83A52"></div><p class="hex">#B83A52</p><p class="role">petal crimson</p></article>
+<article class="card"><p class="key">bright_red</p><div class="chip" style="background:#C85A6A"></div><p class="hex">#C85A6A</p><p class="role">bright crimson</p></article>
+<article class="card"><p class="key">brown</p><div class="chip" style="background:#8A6E62"></div><p class="hex">#8A6E62</p><p class="role">bark</p></article>
+<article class="card"><p class="key">orange</p><div class="chip" style="background:#C47A52"></div><p class="hex">#C47A52</p><p class="role">clay</p></article>
+<article class="card"><p class="key">yellow</p><div class="chip" style="background:#C4A04A"></div><p class="hex">#C4A04A</p><p class="role">pollen</p></article>
+<article class="card"><p class="key">bright_yellow</p><div class="chip" style="background:#D4B46A"></div><p class="hex">#D4B46A</p><p class="role">bright pollen</p></article></div></section>
+<section><h2>Cool scale</h2><div class="grid" style="grid-template-columns:repeat(4, 1fr)"><article class="card"><p class="key">green</p><div class="chip" style="background:#5A7A52"></div><p class="hex">#5A7A52</p><p class="role">moss</p></article>
+<article class="card"><p class="key">bright_green</p><div class="chip" style="background:#6E9270"></div><p class="hex">#6E9270</p><p class="role">bright moss</p></article>
+<article class="card"><p class="key">magenta</p><div class="chip" style="background:#C97A90"></div><p class="hex">#C97A90</p><p class="role">sakura</p></article>
+<article class="card"><p class="key">bright_magenta</p><div class="chip" style="background:#D091A0"></div><p class="hex">#D091A0</p><p class="role">faded pink</p></article></div></section>
+<section><h2>ANSI 0–15</h2><div class="grid ansi" style="grid-template-columns:repeat(8, 1fr)"><article class="card"><p class="key">color0</p><div class="chip" style="background:#D0C6BC"></div><p class="hex">#D0C6BC</p></article>
+<article class="card"><p class="key">color1</p><div class="chip" style="background:#B83A52"></div><p class="hex">#B83A52</p></article>
+<article class="card"><p class="key">color2</p><div class="chip" style="background:#5A7A52"></div><p class="hex">#5A7A52</p></article>
+<article class="card"><p class="key">color3</p><div class="chip" style="background:#C4A04A"></div><p class="hex">#C4A04A</p></article>
+<article class="card"><p class="key">color4</p><div class="chip" style="background:#6A8EAA"></div><p class="hex">#6A8EAA</p></article>
+<article class="card"><p class="key">color5</p><div class="chip" style="background:#C97A90"></div><p class="hex">#C97A90</p></article>
+<article class="card"><p class="key">color6</p><div class="chip" style="background:#7A9AA8"></div><p class="hex">#7A9AA8</p></article>
+<article class="card"><p class="key">color7</p><div class="chip" style="background:#6E2438"></div><p class="hex">#6E2438</p></article>
+<article class="card"><p class="key">color8</p><div class="chip" style="background:#9A8078"></div><p class="hex">#9A8078</p></article>
+<article class="card"><p class="key">color9</p><div class="chip" style="background:#C85A6A"></div><p class="hex">#C85A6A</p></article>
+<article class="card"><p class="key">color10</p><div class="chip" style="background:#6E9270"></div><p class="hex">#6E9270</p></article>
+<article class="card"><p class="key">color11</p><div class="chip" style="background:#D4B46A"></div><p class="hex">#D4B46A</p></article>
+<article class="card"><p class="key">color12</p><div class="chip" style="background:#7A9EBA"></div><p class="hex">#7A9EBA</p></article>
+<article class="card"><p class="key">color13</p><div class="chip" style="background:#D091A0"></div><p class="hex">#D091A0</p></article>
+<article class="card"><p class="key">color14</p><div class="chip" style="background:#8AAAB0"></div><p class="hex">#8AAAB0</p></article>
+<article class="card"><p class="key">color15</p><div class="chip" style="background:#4A1826"></div><p class="hex">#4A1826</p></article></div></section>
+    <footer>
+      accent, bright_magenta, and color13 are <b>#D091A0</b>.
+      cursor and hyprland_active_border are <b>#FAF6F3</b>.
+      mode is light. icons are Yaru-magenta.
+    </footer>
+    <div class="end"></div>
+  </div>
+</body>
+</html>

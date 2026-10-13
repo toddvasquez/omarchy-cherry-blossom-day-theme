@@ -1,0 +1,63 @@
+# Cherry Blossom Day — Omarchy
+# Hanami picnic: pure pink petals, light-blue sky, dusty snow on soft stone.
+# Accents sit between painterly and punchy; backgrounds stay dusty.
+
+mode = "light"
+
+# Jewelry — faded pink as the visible accent; snow on cursor/borders
+accent = "#D091A0"
+cursor = "#FAF6F3"
+selection = "#E8D0D6"
+muted = "#9A8078"
+
+# Surfaces — soft stone, pink only as a tint
+background = "#E9E2DA"
+dark_background = "#DDD4CB"
+darker_background = "#D0C6BC"
+lighter_background = "#F3EDE7"
+
+# Text — deep blossom heart on stone
+foreground = "#6E2438"
+dark_foreground = "#8A5A62"
+light_foreground = "#8A3A4E"
+bright_foreground = "#4A1826"
+selection_foreground = "#4A1826"
+selection_background = "#E8D0D6"
+
+# Named / semantic (sakura recast)
+red = "#B83A52"
+green = "#5A7A52"
+yellow = "#C4A04A"
+blue = "#6A8EAA"
+magenta = "#C97A90"
+cyan = "#7A9AA8"
+orange = "#C47A52"
+brown = "#8A6E62"
+
+bright_red = "#C85A6A"
+bright_green = "#6E9270"
+bright_yellow = "#D4B46A"
+bright_blue = "#7A9EBA"
+bright_magenta = "#D091A0"
+bright_cyan = "#8AAAB0"
+
+# ANSI 0–15
+color0 = "#D0C6BC"
+color1 = "#B83A52"
+color2 = "#5A7A52"
+color3 = "#C4A04A"
+color4 = "#6A8EAA"
+color5 = "#C97A90"
+color6 = "#7A9AA8"
+color7 = "#6E2438"
+color8 = "#9A8078"
+color9 = "#C85A6A"
+color10 = "#6E9270"
+color11 = "#D4B46A"
+color12 = "#7A9EBA"
+color13 = "#D091A0"
+color14 = "#8AAAB0"
+color15 = "#4A1826"
+
+# Focus jewelry — snow-white edge
+hyprland_active_border = "#FAF6F3"
